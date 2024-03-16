@@ -6,22 +6,22 @@ void CreateArray(int[] arr, int size, int min, int max)
 {
     if (size == 0) return;
     Random rnd = new Random();
-    arr[size-1] = rnd.Next(min, max);
-    CreateArray(arr, size-1, min, max);
+    arr[size - 1] = rnd.Next(min, max);
+    CreateArray(arr, size - 1, min, max);
     return;
 }
 void ShowReversedArray(int[] arr, int size)
 {
     if (size == 0) return;
-    Console.Write($"{arr[size-1]} ");
-    ShowReversedArray(arr, size-1);
+    Console.Write($"{arr[size - 1]} ");
+    ShowReversedArray(arr, size - 1);
     return;
 }
 void ShowArray(int[] arr, int size)
 {
     if (size == 0) return;
-    ShowArray(arr, size-1);
-    Console.Write($"{arr[size-1]} ");
+    ShowArray(arr, size - 1);
+    Console.Write($"{arr[size - 1]} ");
     return;
 }
 
