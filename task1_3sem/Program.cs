@@ -12,9 +12,9 @@ string str = "";
 //string str1 = string.Empty; 
 
 
-for (int i = 0; i < 3; i++)
+for (int i = 0; i < chr.GetLength(0); i++)
 {
-    for (int j = 0; j < 3; j++)
+    for (int j = 0; j < chr.GetLength(1); j++)
     {
         str += chr[i,j];
     }
